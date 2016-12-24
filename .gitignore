@@ -1,8 +1,6 @@
-.settings/
-*/settings/
-*/target/
-*/bin/
-*/.bpmn/
-.idea/
-*.iml
+/target
+/.settings
 .classpath
+.project
+.idea
+*.iml
