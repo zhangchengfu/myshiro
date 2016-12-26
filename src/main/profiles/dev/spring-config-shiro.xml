@@ -102,6 +102,7 @@
     
     <bean id="sysUserFilter" class="com.laozhang.myshiro.web.filter.SysUserFilter"/>
     
+    
     <!-- Shiro的Web过滤器 -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
@@ -114,6 +115,7 @@
         </property>
         <property name="filterChainDefinitions">
             <value>
+                /sso/** = anon
                 /login = authc
                 /logout = logout
                 /authenticated = authc

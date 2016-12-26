@@ -48,4 +48,13 @@ public class PasswordHelper {
 
         user.setPassword(newPassword);
     }
+    
+    public String getEncryptPassword(User user, String password) {
+    	String newPassword = new SimpleHash(
+                algorithmName,
+                password,
+                ByteSource.Util.bytes(user.getCredentialsSalt()),
+                hashIterations).toHex();
+    	return newPassword;
+    }
 }
