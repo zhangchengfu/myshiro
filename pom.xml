@@ -168,7 +168,7 @@
     <finalName>myshiro</finalName>
     
     <plugins>
-            <!-- <plugin>
+            <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>8.1.8.v20121106</version>
@@ -178,12 +178,12 @@
                     </webAppConfig>
 	                <connectors>
 	                  <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-	                      <port>8083</port>
+	                      <port>8082</port>
 	                      <maxIdleTime>600000</maxIdleTime>
 	                  </connector>
 	              </connectors>
                 </configuration>
-            </plugin> -->
+            </plugin>
 
 
             <plugin>
