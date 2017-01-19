@@ -116,9 +116,15 @@
         <property name="filterChainDefinitions">
             <value>
                 /sso/** = anon
+                
                 /login = authc
                 /logout = logout
                 /authenticated = authc
+                
+                /oauth2/authorize = anon
+                /oauth2/accessToken = anon
+                /oauth2/userInfo = anon
+                
                 /** = user,sysUser
             </value>
         </property>
